@@ -128,11 +128,11 @@ function funThings() {
         var seconds = time.getSeconds()
 
         function insideFunThings(){
-            if(hours < 10 && hours >= 5){
+            if(hours >= 5 && hours < 10){
                 document.getElementById("theimage").src = './images/morning.gif'
             } else if(hours >= 10 && hours < 19){
                 document.getElementById("theimage").src = './images/afternoon.gif'
-            } else if(hours >= 19 && hours < 5) {
+            } else if(hours >= 19 || hours < 5) {
                 document.getElementById("theimage").src = './images/evening.gif'
             } else {
                 document.getElementById("theimage").src = './images/errored.gif'
